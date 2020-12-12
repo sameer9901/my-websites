@@ -1,0 +1,94 @@
+<html>
+
+<head>
+	<script>
+		function dot() {
+			var value = document.getElementById("sam").value;
+			document.getElementById("sam").value = value + '.';
+		}
+
+		function back() {
+			var value = document.getElementById("sam").value;
+			document.getElementById("sam").value = value.substr(0, value.length - 1);
+		}
+
+		function dis(val) {
+			document.getElementById("sam").value += val
+		}
+
+		function solve() {
+			let x = document.getElementById("sam").value
+			let y = eval(x)
+			document.getElementById("sam").value = y
+		}
+
+		function clr() {
+			document.getElementById("sam").value = ""
+		}
+	</script>
+	<style>
+		.title {
+			margin-bottom: 10px;
+			text-align: center;
+			width: 250px;
+			color: rgb(56, 4, 4);
+			border: solid black 15px;
+			font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+		}
+
+		input[type="button"] {
+			background-color: rgb(48, 212, 103);
+			color: rgb(41, 27, 27);
+			border: solid black 3px;
+			width: 100%;
+			font-size: large;
+		}
+
+		input[type="text"] {
+			background-color: white;
+			border: solid rgb(36, 4, 4) 5px;
+			width: 100%
+		}
+	</style>
+</head>
+
+<body>
+	<div class="title"> Sameer simple Calculator</div>
+	<table border="12">
+		<tbody>
+			<tr>
+				<td colspan="3"><input type="text" id="sam"></td>
+				<td><input type="button" value="clear" onclick="clr()"> </td>
+			</tr>
+			<tr>
+				<td><input type="button" value="1" onclick="dis('1')"> </td>
+				<td><input type="button" value="2" onclick="dis('2')"> </td>
+				<td><input type="button" value="3" onclick="dis('3')"> </td>
+				<td><input type="button" value="/" onclick="dis('/')"> </td>
+			</tr>
+			<tr>
+				<td><input type="button" value="4" onclick="dis('4')"> </td>
+				<td><input type="button" value="5" onclick="dis('5')"> </td>
+				<td><input type="button" value="6" onclick="dis('6')"> </td>
+				<td><input type="button" value="-" onclick="dis('-')"> </td>
+			</tr>
+			<tr>
+				<td><input type="button" value="7" onclick="dis('7')"> </td>
+				<td><input type="button" value="8" onclick="dis('8')"> </td>
+				<td><input type="button" value="9" onclick="dis('9')"> </td>
+				<td><input type="button" value="+" onclick="dis('+')"> </td>
+			</tr>
+			<tr>
+				<td><input type="button" value=".decimal" onclick="dis('.')"> </td>
+				<td><input type="button" value="0" onclick="dis('0')"> </td>
+				<td><input type="button" value="= result" onclick="solve()"> </td>
+				<td><input type="button" value="* multi" onclick="dis('*')"> </td>
+				<td><input type="button" value="back" onclick="back()"> </td>
+			</tr>
+		</tbody>
+	</table>
+
+
+</body>
+
+</html>
