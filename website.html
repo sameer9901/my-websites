@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sam coders</title>
+    <style>
+        body {
+
+            background: url(images/pic1.jpg.jpg) no-repeat no-repeat;
+            /* for images dont write .body */
+            display: block;
+            margin-top: 0px;
+            /*FOR NO SPACE ON TOP */
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+
+        .left {
+            top: 40px;
+            left: 25px;
+            position: relative;
+            /* WE CAN CHNAGE ITS POSITION TO ANY PLACE*/
+            font-family: cursive;
+        }
+
+        .center {
+            display: flex;
+            /* contents at center */
+            justify-content: center;
+            text-align: center;
+            FONT-SIZE: 1.2rem;
+            FONT-WEIGHT: bold;
+            font-family: cursive;
+        }
+
+        .right {
+            top: 39px;
+            right: 24px;
+            display: inline-block;
+            text-align: end;
+            position: absolute;
+            /*complete right*/
+
+        }
+
+        header {
+            background-color: aliceblue;
+            position: sticky;
+            border: 2px solid rgb(0, 0, 0);
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+
+        .btn {
+            font-size: large;
+            font-family: cursive;
+            border-radius: 20px;
+        }
+
+        section {
+            margin: 58px 86px;
+            display: flex;
+            flex-direction: column;
+            color: cornsilk;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 40px;
+        }
+
+        .container {
+            height: 700px;
+            width: 100%;
+
+            display: flex;
+            flex-wrap: wrap;
+            align-items: stretch;
+            opacity: 90%;
+            justify-content: center;
+            /* to broing small written contents at center*/
+            flex-direction: column;
+            align-self: center;
+            position: flex;
+
+        }
+
+
+        .item {
+            width: 100%;
+        }
+
+        .item {
+            background: tomato;
+            padding: 29px;
+            width: 196px;
+            height: 320px;
+            margin: 456px;
+            line-height: 26px;
+            color: #020202;
+            position: relative;
+            animation-name: welcome;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+
+        }
+
+        @keyframes welcome {
+
+            0% {
+                background-color: red;
+                color: cornsilk;
+                left: 0px;
+                top: 0px;
+            }
+
+            15% {
+                background-color: yellow;
+                left: 200px;
+                top: 0px;
+            }
+
+            25% {
+                background-color: blue;
+                color: darkgoldenrod;
+                left: 200px;
+                top: 200px;
+            }
+
+            50% {
+                background-color: green;
+                color: darkred;
+                left: 0px;
+                top: 200px;
+            }
+
+            100% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+
+        }
+
+        .item:hover {
+            transform: scale(2);
+            cursor: pointer;
+        }
+
+        .secondpage {
+            background-color: rgb(0, 0, 0);
+            padding: 50px;
+            margin: 300px;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            font-size: 30px;
+            font-family: cursive;
+        }
+
+
+        img{
+            background-repeat: no-repeat;
+            background-position: inherit;
+            width: 100%;
+        }
+        /* .secndpagecon {
+            height: 344px;
+            width: 10%;
+            background-color: rgb(255, 255, 255);
+            border: 2px solid black;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: stretch;
+
+        }*/
+
+        .fbox {
+            background-color: rgb(0, 0, 0);
+            border: 2px solid rgb(255, 252, 252);
+            margin: 0px;
+            padding:156px;
+            position: relative;
+            margin-left: 76px;
+            opacity: 90%;
+            color: khaki;
+            display: inline;
+            box-sizing: border-box;
+        } 
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <!-- left for logo! -->
+        <div class="left">
+            <div> SAM_CODERS</div>
+        </div>
+        <!-- center for navbar -->
+        <div class="center">
+            <ul class="navbar">
+                Home &nbsp;&nbsp;&nbsp;
+                courses &nbsp;&nbsp;&nbsp;
+                About us &nbsp;&nbsp;&nbsp;
+                Contact us
+            </ul>
+        </div>
+
+
+        <!-- right for signin search -->
+        <div class="right">
+            <button class="btn">login</button>
+            <button class="btn">sign up</button>
+        </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="item" id="item1">
+            <h1>welcome to sam_coders</h1>
+        </div>
+
+    </div>
+    <div class="secondpage">
+        <hr>
+        <h2>lets start</h2>
+        <p>learning fullstack development is very simple</p>
+        <hr>
+    </div>
+>
+        <img src="images/pic2.jpg.jpg" alt="">
+        <div class="fbox" id="fbox1">
+            
+            CEO :-&nbsp;&nbsp;&nbsp;
+            SAMEER
+
+
+        </div>
+        <div class="fbox" id="fbox2">
+            
+          CFO :-&nbsp;&nbsp;&nbsp ARFAT
+
+
+        </div>
+        <div class="fbox" id="fbox3">
+            
+            COO :- &nbsp;&nbsp;&nbspSAEED
+
+            
+        </div>
+
+</body>
+
+</html>
