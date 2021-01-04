@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navigating dom</title>
+</head>
+<style>
+    .container {
+        display:block;
+    }
+    #btn{
+
+        padding: 14px;
+        background: black;
+        color: blanchedalmond;
+        font-weight: bold;
+        border-radius: 7px;
+    }
+</style>
+
+<body>
+    <div id="main" class="container">
+        <ul id="nav">
+            <li>home </li>
+            <li>about us</li>
+            <li>contact us</li>
+            <li>services</li>
+        </ul>
+        <h1>this is heading</h1>
+        <p id="para"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod autem, fugit nobis corporis, perferendis earum quam provident molestias ea ad illo ut! Pariatur, repudiandae dolorum perferendis voluptate quia eos impedit similique rerum nobis, unde omnis provident nam explicabo magnam quis! Error qui ratione necessitatibus inventore deleniti reprehenderit commodi quibusdam maiores doloremque eos, unde perspiciatis, nemo incidunt illo quam. Ab temporibus laborum omnis, natus fugiat non illum soluta deserunt eveniet ad nihil fugit repudiandae nobis sint minus doloremque inventore tenetur cumque autem eos et perferendis. Veritatis, iusto doloremque quisquam illo eveniet qui architecto expedita minus tenetur voluptatum eum, numquam fugiat ex repellat reprehenderit consequuntur iure optio necessitatibus omnis! Fugiat ipsum quae, libero nihil adipisci deserunt, corrupti possimus nulla dolorum architecto facere quibusdam? Sed nemo voluptate iure natus qui fugit accusamus alias ipsum, excepturi expedita hic distinctio, fugiat eum inventore? Impedit harum expedita nemo dicta amet veniam quas est veritatis voluptate. Nam, animi non minus quia perferendis tenetur veritatis, eius vitae unde odit quo. Non cum aperiam impedit voluptatem dignissimos totam dolorem quod voluptates perferendis dolores est laborum iusto deleniti repellendus harum minima nemo, culpa voluptatum eum a mollitia blanditiis quasi, aliquid cumque! Optio ut recusandae saepe vitae architecto hic tempora sint?</p>
+    </div>
+    <button id="btn" onclick="tohide()">show hide</button>
+</body>
+<script>
+    
+    let para = document.getElementById('para')
+    para.addEventListener('mouseover',function run(){
+      
+         alert('mouse over');
+
+    });
+    
+    
+    
+    function tohide(){
+             
+           let btn = document.getElementById('btn')
+           let para = document.getElementById('para')
+
+           if(para.style.display !='none'){
+
+               para.style.display='none';
+            }
+            else{
+                
+                para.style.display='block';
+            }
+            
+    }                          
+</script>
+
+</html>
