@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+        .container{
+            border: 2px solid black;
+        }
+    </style>
+  
+
+    
+</head>
+<body>
+    <div class="container">
+         this is today's time <span id="time"></span>
+        <h1>hello </h1>
+    </div>
+</body>
+<script>
+
+    console.log("this is tut 58")
+
+    function greet(name ,bye)
+    {
+
+        console.log("hello good morning  " + name + " " +  bye);
+    }
+
+//    timeout=setTimeout(greet, 5000, "sam" ,"take care");
+//    console.log(timeout);
+
+
+//    clearTimeout(timeout);
+    
+    // interclear=setInterval(greet ,2000,"sam","good night");0
+    
+    // clearInterval(interclear);
+  function displaytime(){
+      time= new Date();
+      console.log(time);
+      document.getElementById('time').innerHTML = time;
+
+  }
+   setInterval(displaytime,1000);
+
+</script>
+</html>
