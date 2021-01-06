@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login sam_coders</title>
+    <style>
+
+.container{
+    text-align: center;
+    border: 2px solid rgb(0, 0, 0);
+    width: 400px;
+    height: 450px;
+    background: #fff;
+    position: absolute;
+    box-shadow: 0 10px 15px;
+    display: grid;
+    border-radius: 15px;
+    justify-content: center;
+    grid-template-columns: 280px;
+    overflow: hidden;
+    margin-top: 200px;
+    margin-bottom: 221px;
+    margin-left: 650px;
+    margin-right: 201px;
+
+}   
+.container::before ,.container::after{
+    content: "";
+    position: absolute;
+    width: 230px;
+    height:230px ;
+    background: #f9ac38;
+    opacity: 0.2;
+    border-radius: 50%;
+    z-index:0.1;
+
+}
+.container::before{
+    top: -30px;
+    left:-10px;
+}
+.container::after{
+    top: -60px;
+    left: -60px;
+    opacity:0.2;
+}
+.namepass{
+    font-size: 20px;
+    z-index:1;
+    
+}
+.username{
+    margin: 8px;
+    border: dotted;
+     color: black;
+     font-weight: bold;
+     font-size: 20px;
+     text-align: center;
+     border-radius: 10px;
+}
+.password{
+     margin: 8px;
+     color: black;
+     border: dotted;
+     font-weight: bold;
+     font-size: 20px;
+     text-align: center;
+     border-radius: 10px;
+
+}
+html{
+    background-color:/*#3fb0ac/*/ #bccbde;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    animation: bgcolor infinite 20s;
+}
+.btn{
+    cursor: pointer;
+    font-size: 30px;
+    border-radius: 20px;
+}
+.btn:hover{
+    font-size: 35px;
+    background-color: rgb(127, 185, 187);
+}
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+.links a{
+    display: block;
+    width: 143px;
+    height: 45px;
+    background: rgb(114, 158, 158);
+    text-decoration:none;
+    border-radius: 1.3rem;
+    overflow: hidden;
+    color: #fff;
+    line-height: 45px;
+    margin: 5px;
+}
+.google:hover{
+    background-color:black ;
+}
+.facebook:hover{
+    background-color:black ;
+
+}
+@keyframes bgcolor {
+    0%{
+      background-color: #203550;  
+    }
+    20%{
+      background-color: #af279d;  
+    }
+    30%{
+      background-color: #1aa15e;  
+    }
+    50%{
+      background-color: #ca3253;  
+    }
+    70%{
+      background-color: #dd522f;  
+    }
+    90%{
+      background-color: #7661ec;  
+    }
+    100%{
+      background-color: #59c538;  
+    }
+    
+}
+    </style>
+
+</head>
+<body>
+<div class="container">
+     
+    <h1> login </h1>
+    <div class="namepass">
+        <input type="text" class="username" placeholder="user name / email">
+        <input type="password" class="password" placeholder="enter password">
+
+    </div>
+    <button class="btn" type="submit">LOGIN</button>
+    <div class="otherlink">
+        <p>OR</p>
+        <p>login with your social media</p>
+        <div class="links">
+            <a href="#" class="google"> 
+                <span>GOOGLE</span>
+            </a>
+            <a href="#" class="facebook">
+                <span>FACEBOOK</span>
+            </a>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
