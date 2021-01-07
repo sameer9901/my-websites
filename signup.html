@@ -71,13 +71,13 @@
 
 }
 html{
-    background-color:/*#3fb0ac/*/ #bccbde;
+    background-color:/*#3fb0ac/*/ #e4bdbd;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     animation: bgcolor infinite 10s;
 }
 .btn{
     cursor: pointer;
-    font-size: 30px;
+    font-size: 20px;
     border-radius: 20px;
 }
 .btn:hover{
@@ -109,7 +109,7 @@ html{
     background-color:black ;
 
 }
-@keyframes bgcolor {
+/* @keyframes bgcolor {
     0%{
       background-color: #203550;  
     }
@@ -132,21 +132,22 @@ html{
       background-color: #59c538;  
     }
     
-}
+} */
     </style>
 
 </head>
-<body>    
-
+<body>
 <div class="container">
      
-    <h1> login </h1>
-    <div class="namepass" >
-        <input type="text" class="username" placeholder="user name / email" id="focus">
-        <input type="password" class="password" placeholder="enter password" >
+    <h1> SIGN-UP</h1>
+    <div class="namepass">
+        <input type="text" class="username" placeholder="FULL name" id="focuss">
+        <input type="text" class="username" placeholder=" email">
+        <input type="password" class="password" placeholder="enter password">
+        <input type="password" class="password" placeholder="RE-enter password">
 
     </div>
-    <button class="btn" type="submit">LOGIN</button>
+    <button class="btn" type="submit">SIGN-UP</button>
     <div class="otherlink">
         <p>OR</p>
         <p>login with your social media</p>
@@ -163,11 +164,8 @@ html{
 </div>
 </body>
 <script>
-  
-            var targetfoc = document.getElementById("focus");
-
-   
-   targetfoc.focus();
+       var namefocus = document.getElementById("focus");
+       focuss.focus();
 
 </script>
 </html>

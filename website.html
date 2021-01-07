@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sam coders</title>
+    <link rel="stylesheet" href="login.html">  
+    <link rel="stylesheet" href="signup.html">
+    <link rel="stylesheet" href="contactus.html">
     <style>
         body {
 
@@ -26,13 +29,14 @@
         }
 
         .center {
-            display: flex;
+            display: inline;
             /* contents at center */
             justify-content: center;
             text-align: center;
             FONT-SIZE: 1.2rem;
             FONT-WEIGHT: bold;
             font-family: cursive;
+            text-decoration: none;
         }
 
         .right {
@@ -47,7 +51,7 @@
 
         header {
             background-color: aliceblue;
-            position: sticky;
+            position: relative;
             border: 2px solid rgb(0, 0, 0);
             margin-left: 0px;
             margin-right: 0px;
@@ -57,6 +61,7 @@
             font-size: large;
             font-family: cursive;
             border-radius: 20px;
+            cursor: pointer;
         }
 
         section {
@@ -153,7 +158,7 @@
         .secondpage {
             background-color: rgb(0, 0, 0);
             padding: 50px;
-            margin: 300px;
+            margin: 232px;
             color: white;
             justify-content: center;
             align-items: center;
@@ -171,7 +176,7 @@
             background-position: inherit;
             width: 100%;
         }
-        /* .secndpagecon {
+        /* /* .secndpagecon { 
             height: 344px;
             width: 10%;
             background-color: rgb(255, 255, 255);
@@ -194,11 +199,83 @@
             display: inline;
             box-sizing: border-box;
         } 
+
+        .thirdflexpg{
+            background-color:black;
+            content: "";
+            position:absolute;
+            opacity:1;
+            z-index: -1;
+            display: flex;
+            width: 100%;
+            height: 380%;
+
+        }
+        .flexx {
+                 color: rgb(197, 131, 131);
+                 border: 4px solid rgb(35, 165, 67);
+                 border-radius: 5px;
+                 text-align: center;
+                 margin: 100px;
+                 padding: 10px;
+}
+        
+        .flexx p{
+                 font-size: 20px;
+        }
+        .flexx h1{
+                 font-size: 40px;
+                 color: aliceblue;
+        }
+        br{
+            color:black ;
+        }
+footer{
+    color: rgb(0, 0, 0);
+    margin-top: 178%;
+    background-color: cadetblue;
+    text-align: center;
+}
+footer a{
+    text-decoration: none;
+    text-align: center;
+    font-size: 25px;
+}
+html{
+    font-family: 'Times New Roman', Times, serif;
+}
+.btn2{
+    font-size: 25px;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+    color: blanchedalmond;
+}
+.btn2:hover{
+   background-color: chocolate;
+   cursor: pointer;
+}
+#back-to-top button:hover{
+   cursor: pointer;
+   background-color: chocolate;
+} 
+#back-to-top button{
+    border-radius: 5px;
+    font-size: 25px;
+    background-color: rgb(0, 0, 0);
+    color: blanchedalmond;
+    position:sticky;
+    
+}
+.navbar a{
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 25px;
+}
     </style>
 </head>
 
 <body>
-    <header>
+    <header id="top">
 
         <!-- left for logo! -->
         <div class="left">
@@ -207,55 +284,90 @@
         <!-- center for navbar -->
         <div class="center">
             <ul class="navbar">
-                Home &nbsp;&nbsp;&nbsp;
-                courses &nbsp;&nbsp;&nbsp;
-                About us &nbsp;&nbsp;&nbsp;
-                Contact us
+              <a href="#home">home &nbsp;&nbsp;&nbsp;&nbsp;</a>
+              <a href="#aboutus">about us&nbsp;&nbsp;&nbsp;&nbsp;</a>
+              <a href="#courses">courses&nbsp;&nbsp;&nbsp;&nbsp;</a>
+              <a href="contactus.html" id="contactuss">contact us&nbsp;&nbsp;&nbsp;&nbsp;</a>
             </ul>
         </div>
 
 
         <!-- right for signin search -->
         <div class="right">
-            <button class="btn">login</button>
-            <button class="btn">sign up</button>
+          <a href="login.html">
+
+              <button href="" class="btn">login</button>
+            </a>
+            <a href="signup.html">
+
+                <button href=""   class="btn">sign up</button>
+            </a>  
         </div>
         </div>
     </header>
-    <div class="container">
+    <div class="container"id="home" >
         <div class="item" id="item1">
             <h1>welcome to sam_coders</h1>
         </div>
 
     </div>
-    <div class="secondpage">
+    <div class="secondpage"id="aboutus">
         <hr>
         <h2>lets start</h2>
         <p>learning fullstack development is very simple</p>
         <hr>
     </div>
->
-        <img src="images/pic2.jpg.jpg" alt="">
-        <div class="fbox" id="fbox1">
+    <div class="thirdflexpg"id="courses">
+       
+        <div class="flexx">
+            <h1 > front-end basics</h1>
+            <img src="images/fb.jpg" alt="">
+
+            <p>Front-end Web Development refers to building web interfaces, specifically the parts of the website that the user will interact with. When you’re browsing the web, everything you see, from images and headings to sliders and buttons is made using HTML, CSS and JavaScript, the main components to any website.</p>
             
-            CEO :-&nbsp;&nbsp;&nbsp;
-            SAMEER
+
+            <h1 > front-end advanced</h1>
+            <img src="images/FA.jpg" alt="">
+
+            <p>Front-end Web Development Advanced Js, ES6/7, Babel, npm, Webpack, React, Redux, React-Router, React Hooks, etc. , and gain practice implementing them and getting them to work for yourself all in a classroom program. the main components to any website.</p>
+
+          
 
 
         </div>
-        <div class="fbox" id="fbox2">
-            
-          CFO :-&nbsp;&nbsp;&nbsp ARFAT
+        <div class="flexx">
+            <h1  > back-end-basics</h1>
+            <img src="images/bb.jpg" alt="">
 
+            <p>Back-end development refers to the development of server-side logic that powers websites and apps from behind the scenes. It includes all the code needed to build out the database, server, and application. From database migrations to API integrations to setting up the server-side technologies that make a website tick, a back-end web developer may be the talent you need to get your next web project off the ground.</p>
+        
+
+            <h1> back end-advanced  </h1>
+            <img src="images/BA.jpg" alt="">
+            
+            <p>Top 5 Databases for Web Developers. 1 MySQL Community Server. This DBMS gets the number one nod mainly because the community version is free and is a great platform to begin learning ... 2 Microsoft Access. 3 Microsoft SQL Server Express. 4 Oracle Express Edition. 5 DB2 Express-C</p>
+          
 
         </div>
-        <div class="fbox" id="fbox3">
-            
-            COO :- &nbsp;&nbsp;&nbspSAEED
+    </div>
 
-            
-        </div>
+<footer id="contactuss">
+    <h1>contact me</h1>
+    <a href="https://mail.google.com/" aria-placeholder="sameerpk582gmail.com">SAM_CODERS</a>
+    <a id="back-to-top"  href="#">
+        <button>on Top</button>
+    </a>
+    <a href="contactus.html">
 
+        <button class="btn2">contact me</button>
+    </a>
+
+        
+</footer>
 </body>
+<script>
+
+
+</script>
 
 </html>

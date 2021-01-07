@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact me</title>
+    <style>
+        .container {
+            text-align: center;
+            border: 2px solid rgb(0, 0, 0);
+            width: 400px;
+            height: 450px;
+            background: #fff;
+            position: absolute;
+            box-shadow: 0 10px 15px;
+            display: grid;
+            border-radius: 15px;
+            justify-content: center;
+            grid-template-columns: 280px;
+            overflow: hidden;
+            margin-top: 200px;
+            margin-bottom: 221px;
+            margin-left: 650px;
+            margin-right: 201px;
+
+        }
+
+        .container::before,
+        .container::after {
+            content: "";
+            position: absolute;
+            width: 230px;
+            height: 230px;
+            background: #f9ac38;
+            opacity: 0.2;
+            border-radius: 50%;
+            z-index: 0.1;
+
+        }
+
+        .container::before {
+            top: -30px;
+            left: -10px;
+        }
+
+        .container::after {
+            top: -60px;
+            left: -60px;
+            opacity: 0.2;
+        }
+
+        body {
+            text-align: center;
+            justify-content: center;
+            align-content: center;
+
+
+        }
+        button{
+            margin: 52px;
+        }
+        #mess{
+            padding: 50px;
+        }
+        input[type="text"]{
+            border:2px solid black;
+           width: 200px;
+           border-radius: 9px;
+        }
+        button{
+            border-radius: 25px;
+            background-color: cornflowerblue;
+            font-style: oblique;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="submit">
+        <div class="container">
+            <h1>
+              write a message here
+            </h1>
+                <div class="message">
+
+                <input type="text" placeholder="your name" id="focal">
+            </div>
+            <div>
+
+                <input type="text" placeholder="email">
+            </div>
+            <div>
+
+                <input type="text" placeholder="contact info">
+            </div>
+            <div>
+
+                <input type="text" placeholder="Type your message I will reply" id="mess">
+            </div>
+
+            <button>submit</button>
+
+        </div>
+
+    </form>
+</body>
+<script>
+var fucc =document.getElementById("focal");
+focal.focus();
+
+</script>
+
+</html>
